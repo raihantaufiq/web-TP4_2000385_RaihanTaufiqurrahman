@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum 4</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body class="bg-light">
+    <main>
+        <div class="container my-5 pb-5 px-5 bg-body border rounded" id="kontainer">
+            <h1 class="text-center mt-4 mb-5">Biodata</h1>
+            <form id="biodata_form" class="row g-3">
+                <div class="col-12">
+                <label for="namaLengkap" class="form-label">Nama Lengkap</label>
+                <input required type="text" class="form-control" id="namaLengkap">
+                </div>
+                <div class="col-12">
+                    <label for="tanggalLahir" class="form-label">Tanggal Lahir</label>
+                    <input required type="date" class="form-control" id="tanggalLahir">
+                </div>
+                <div class="col-12">
+                    Jenis Kelamin<br />
+                    <div class="form-check form-check-inline mt-2">
+                        <input required class="form-check-input" type="radio" name="jenisKelamin" value="Laki-laki">
+                        <label class="form-check-label" for="laki-laki">Laki-laki</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input required class="form-check-input" type="radio" name="jenisKelamin" value="Perempuan">
+                        <label class="form-check-label" for="perempuan">Perempuan</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input required class="form-check-input" type="radio" name="jenisKelamin" value="???">
+                        <label class="form-check-label" for="other">Other</label>
+                    </div>
+                </div>
+                <div class="col-12" id="hobi">
+                    Hobi<br />
+                    <div class="form-check form-check-inline mt-2">
+                        <input class="form-check-input" type="checkbox" value="Ngoding">
+                        <label class="form-check-label" for="ngoding">Ngoding</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="Rebahan">
+                        <label class="form-check-label" for="rebahan">Rebahan</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="Melamun">
+                        <label class="form-check-label" for="melamun">Melamun</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="Baca Buku">
+                        <label class="form-check-label" for="bacaBuku">Baca Buku</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="Nonton Youtube">
+                        <label class="form-check-label" for="nontonYoutube">Nonton Youtube</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="Dengerin Lagu">
+                        <label class="form-check-label" for="dengerinLagu">Dengerin Lagu</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="lain-lain">
+                        <label class="form-check-label" for="other">Other</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <label for="agama" class="form-label">Agama</label>
+                    <select required id="agama" class="form-select">
+                        <option selected disabled value="">...</option>
+                        <option>Islam</option>
+                        <option>Protestan</option>
+                        <option>Katolik</option>
+                        <option>Hindu</option>
+                        <option>Buddha</option>
+                        <option>Khonghucu</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="pesan" class="form-label">Pesan</label>
+                    <textarea required class="form-control" id="pesan" rows="4"></textarea>
+                </div>
+                
+                <div class="col-12">
+                <button class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
